@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAIKYUU | รองเท้าวอลเลย์บอลพรีเมียม</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ส่วนเสริมเฉพาะหน้านี้ ไม่แตะไฟล์ style.css เดิม */
+  .mood-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .mood-card .product-info {
+    padding: var(--space-md) var(--space-sm);
+  }
+  .mood-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+  }
+  .mood-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  @media (max-width: 992px) {
+    .mood-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .mood-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">HAIKYUU</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="product.html">สินค้าทั้งหมด</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Volleyball Footwear</span>
+      <h1>haikyuu — ทุกก้าวบนคอร์ท<br>คือจังหวะของแพชชั่น</h1>
+      <p>รองเท้าวอลเลย์บอลที่ออกแบบมาเพื่อทุกจังหวะสำคัญบนคอร์ท ตั้งแต่การเสิร์ฟแรกจนถึงแมตช์พอยต์ ด้วยดีไซน์เรียบหรูและโครงสร้างที่รองรับทุกการเคลื่อนไหว</p>
+      <div class="hero-actions">
+        <a href="product.html" class="btn btn-outline">ดูสินค้าทั้งหมด</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="haikyuu volleyball shoes">
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Choose Your Mood</span>
+      <h2>5 โทนสี 5 สไตล์ของนักกีฬา</h2>
+    </div>
+
+    <div class="mood-grid">
+      <a class="product-card mood-card" data-mood="red" href="product.html?mood=red">
+        <div class="product-info">
+          <div class="mood-label">
+            <span class="mood-dot red"></span>
+            <h3>ขาว-แดง</h3>
+          </div>
+          <p>พลังและความมั่นใจในทุกการกระโดด สีขาวสะอาดตาตัดกับแถบแดงสด ให้ความรู้สึกดุดันแต่ยังดูเรียบหรู เหมาะกับคนที่อยากโดดเด่นในสนาม</p>
+        </div>
+      </a>
+
+      <a class="product-card mood-card" data-mood="mint" href="product.html?mood=mint">
+        <div class="product-info">
+          <div class="mood-label">
+            <span class="mood-dot mint"></span>
+            <h3>ขาว-เขียวมิ้น</h3>
+          </div>
+          <p>ความสดชื่นและผ่อนคลาย เหมือนลมหายใจก่อนเสิร์ฟลูกสำคัญ โทนพาสเทลที่ดูเป็นมิตร เหมาะกับสายแคชชวลที่อยากได้ความน่ารักปนความคูล</p>
+        </div>
+      </a>
+
+      <a class="product-card mood-card" data-mood="blackmint" href="product.html?mood=blackmint">
+        <div class="product-info">
+          <div class="mood-label">
+            <span class="mood-dot blackmint"></span>
+            <h3>ดำ-เขียวมิ้น</h3>
+          </div>
+          <p>ความเท่ที่มาพร้อมความสดใหม่ พื้นดำเข้มขับให้แถบมิ้นดูโดดเด่นแบบมีสไตล์ เหมาะกับคนที่ชอบความแตกต่างแบบมีเอกลักษณ์</p>
+        </div>
+      </a>
+
+      <a class="product-card mood-card" data-mood="gold" href="product.html?mood=gold">
+        <div class="product-info">
+          <div class="mood-label">
+            <span class="mood-dot gold"></span>
+            <h3>ขาว-ทอง</h3>
+          </div>
+          <p>ความหรูหราแบบมีระดับ แถบทองเปล่งประกายทุกครั้งที่ก้าวเดิน ให้ความรู้สึกเหมือนแชมป์ เหมาะกับคนที่อยากให้รองเท้าเป็นมากกว่าอุปกรณ์กีฬา</p>
+        </div>
+      </a>
+
+      <a class="product-card mood-card" data-mood="black" href="product.html?mood=black">
+        <div class="product-info">
+          <div class="mood-label">
+            <span class="mood-dot black"></span>
+            <h3>ดำ-ดำ (Total Black)</h3>
+          </div>
+          <p>ความเรียบหรูและจริงจัง สำหรับคนที่เชื่อว่า "น้อยแต่มาก" ใส่ได้ทุกวันไม่มีตกเทรนด์ เหมาะกับทุกสไตล์การเล่นและการแต่งตัว</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">HAIKYUU</div>
+    <p>รองเท้าวอลเลย์บอลพรีเมียม สำหรับทุกจังหวะบนคอร์ท</p>
+    <div class="footer-bottom">&copy; 2026 HAIKYUU. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "red",
+    "name": "Haikyuu Red Stripe",
+    "color": "red",
+    "size": 40,
+    "price": 320,
+    "image": "images/red.jpg",
+    "description": "รองเท้าวอลเลย์บอลสีขาว แถบสีแดง ไซส์ 40 ดีไซน์คลาสสิก น้ำหนักเบา กระชับทุกการเคลื่อนไหว"
+  },
+  {
+    "id": "mint",
+    "name": "Haikyuu Mint Stripe",
+    "color": "mint",
+    "size": 42,
+    "price": 380,
+    "image": "images/mint.jpg",
+    "description": "รองเท้าวอลเลย์บอลสีขาว แถบสีเขียวมิ้น ไซส์ 42 โทนสดชื่น ดูสะอาดตา เหมาะกับสนามในร่ม"
+  },
+  {
+    "id": "blackmint",
+    "name": "Haikyuu Black Mint",
+    "color": "blackmint",
+    "size": 44,
+    "price": 420,
+    "image": "images/blackmint.jpg",
+    "description": "รองเท้าวอลเลย์บอลสีดำ แถบสีเขียวมิ้น ไซส์ 44 ผสานความเท่และความสดใสในคู่เดียว"
+  },
+  {
+    "id": "gold",
+    "name": "Haikyuu Gold Stripe",
+    "color": "gold",
+    "size": 46,
+    "price": 460,
+    "image": "images/gold.jpg",
+    "description": "รองเท้าวอลเลย์บอลสีขาว แถบสีทอง ไซส์ 46 ดีไซน์หรูหรา โดดเด่นด้วยโทนทองพรีเมียม"
+  },
+  {
+    "id": "black",
+    "name": "Haikyuu All Black",
+    "color": "black",
+    "size": 48,
+    "price": 500,
+    "image": "images/black.jpg",
+    "description": "รองเท้าวอลเลย์บอลสีดำล้วน แถบสีดำ ไซส์ 48 ดีไซน์เรียบเท่ สำหรับผู้เล่นที่มั่นใจในสไตล์ตัวเอง"
+  }
+]

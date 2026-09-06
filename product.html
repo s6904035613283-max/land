@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สินค้าทั้งหมด | HAIKYUU</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ส่วนเสริมเฉพาะหน้านี้ ไม่แตะไฟล์ style.css เดิม */
+  #filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-lg);
+  }
+  #filter-bar button {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-soft);
+    transition: all var(--transition-base);
+  }
+  #filter-bar button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-dark);
+  }
+  #filter-bar button.active {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    border-color: var(--color-text);
+  }
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  #product-list p {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  @media (max-width: 992px) {
+    #product-list { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    #product-list { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">HAIKYUU</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="product.html">สินค้าทั้งหมด</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">All Products</span>
+      <h2>สินค้าทั้งหมด</h2>
+    </div>
+
+    <!-- script.js จะ render ปุ่มกรองและรายการสินค้าลงในสอง element นี้เอง -->
+    <div id="filter-bar"></div>
+    <div id="product-list"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">HAIKYUU</div>
+    <p>รองเท้าวอลเลย์บอลพรีเมียม สำหรับทุกจังหวะบนคอร์ท</p>
+    <div class="footer-bottom">&copy; 2026 HAIKYUU. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
